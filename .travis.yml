@@ -5,6 +5,9 @@ perl6:
     - 2015.06
     - 2015.05
 
+before_install:
+    - sudo apt-get install -y vim
+
 install:
     - rakudobrew build-panda
     - panda install File::Temp
